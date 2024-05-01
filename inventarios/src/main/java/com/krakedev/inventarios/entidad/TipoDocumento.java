@@ -6,6 +6,10 @@ public class TipoDocumento {
 	
 	
 	
+	public TipoDocumento() {
+	
+	}
+	
 	public TipoDocumento(String codigo, String descripcion) {
 		super();
 		this.codigo = codigo;

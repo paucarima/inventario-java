@@ -2,16 +2,21 @@ package com.krakedev.inventarios.entidad;
 
 public class Proveedor {
 	private String identificador;
-	private String tipoDocumento;
+	private TipoDocumento tipoDocumento;
 	private String nombre;
 	private String telefono;
 	private String correo;
 	private String direccion;
 	
+	
+	
+	public Proveedor() {
 
-	public Proveedor(String identificador, String tipoDocumento, String nombre, String telefono, String correo,
+	}//este cosntructor sirve para leer los dato json
+	
+	public Proveedor(String identificador, TipoDocumento tipoDocumento, String nombre, String telefono, String correo,
 			String direccion) {
-
+		super();
 		this.identificador = identificador;
 		this.tipoDocumento = tipoDocumento;
 		this.nombre = nombre;
@@ -25,10 +30,10 @@ public class Proveedor {
 	public void setIdentificador(String identificador) {
 		this.identificador = identificador;
 	}
-	public String getTipoDocumento() {
+	public TipoDocumento getTipoDocumento() {
 		return tipoDocumento;
 	}
-	public void setTipoDocumento(String tipoDocumento) {
+	public void setTipoDocumento(TipoDocumento tipoDocumento) {
 		this.tipoDocumento = tipoDocumento;
 	}
 	public String getNombre() {
@@ -55,13 +60,14 @@ public class Proveedor {
 	public void setDireccion(String direccion) {
 		this.direccion = direccion;
 	}
-
 	@Override
 	public String toString() {
 		return "Proveedor [identificador=" + identificador + ", tipoDocumento=" + tipoDocumento + ", nombre=" + nombre
 				+ ", telefono=" + telefono + ", correo=" + correo + ", direccion=" + direccion + "]";
 	}
 	
+	
+
 	
 	
 	
